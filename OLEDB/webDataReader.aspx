@@ -6,6 +6,8 @@
 <head runat="server">
     <title> WEB DATA READER </title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <style type="text/css">
         .auto-style1 {
             text-decoration: underline;
@@ -45,9 +47,9 @@
     <h1 class="auto-style1"> THE DATAREADER OBJECT  </h1>
 
     <form id="form1" runat="server">
-        <div>
+        <div class="alert alert-danger">
 
-            <table align="center" class="auto-style10">
+            <table align="center" class="table">
                 <tr>
                     <td>
                         <asp:Label ID="lblName" runat="server"> Select a Course </asp:Label>
@@ -104,7 +106,7 @@
                         </table>
                     </td>
                     <td>
-                        <asp:Button ID="btnUpdate" runat="server" Text="Update" OnClick="btnUpdate_Click" />
+                        <asp:Button ID="btnUpdate" runat="server" Text="Update" OnClick="btnUpdate_Click" class="btn btn-success" />
                     </td>
                    </tr>
 
@@ -117,27 +119,32 @@
                               <HeaderStyle BackColor="#1EDE4C" ForeColor="White" Font-Bold="true"  />
                               <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
                               <SelectedRowStyle BackColor="#FF5733" ForeColor="White" Font-Bold="true"  />
-
-
-
+                              <SortedAscendingCellStyle BackColor="#DAF7A6" />
+                              <SortedAscendingHeaderStyle BackColor="Yellow" />
+                              <SortedDescendingCellStyle BackColor="#3160CC" />
+                              <SortedDescendingHeaderStyle BackColor="#17F9F2" />
                           </asp:GridView>
                     </td>
+                    <td class="auto-style11">&nbsp;</td>
                 </tr>
-               
 
-
-
-
-
-
-
-
+               <tr>
+                   <td class="auto-style11" colspan="2">&nbsp;</td>
+                   <td class="auto-style11">&nbsp;</td>
+               </tr>
             </table>
-
-
-
-
         </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        
+        <asp:GridView ID="gridTest" runat="server"></asp:GridView>
+        <br />
+        <br />
+        <br />
+        <br />
+
     </form>
 </body>
 </html>
