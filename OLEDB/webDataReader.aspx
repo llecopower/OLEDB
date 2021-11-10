@@ -112,7 +112,7 @@
 
                 <tr>
                     <td colspan="3" class="auto-style11"> 
-                          <asp:GridView ID="gridResults" BackColor="White" BorderColor="YellowGreen" BorderStyle="None" 
+                          <asp:GridView ID="gridResults" BackColor="White" BorderColor="YellowGreen" BorderStyle="Double"
                               BorderWidth="1px" CellPadding="5" GridLines="Vertical" runat ="server">
                               <AlternatingRowStyle BackColor="#2D9AB2"/>
                               <FooterStyle  BackColor="#D82BDE" ForeColor="Black" />
